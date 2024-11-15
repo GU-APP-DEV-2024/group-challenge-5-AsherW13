@@ -29,5 +29,11 @@ class MainMenu : AppCompatActivity() {
             var intent = Intent(this, NasaAPI::class.java)
             startActivity(intent)
         }
+
+        var marsPicsButton = findViewById<Button>(R.id.marsPic)
+        marsPicsButton.setOnClickListener {
+            var intent = Intent(this, MarsPics::class.java)
+            startActivity(intent)
+        }
     }
 }
